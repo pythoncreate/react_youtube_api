@@ -2,6 +2,10 @@ module.exports = {
   entry: [
     './src/index.js'
   ],
+  watchOptions: {
+  aggregateTimeout: 300,
+  poll: 300
+  },
   output: {
     path: __dirname,
     publicPath: '/',
@@ -24,3 +28,4 @@ module.exports = {
     contentBase: './'
   }
 };
+
